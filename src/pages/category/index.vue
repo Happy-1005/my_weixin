@@ -27,7 +27,7 @@
             <!-- 品牌 -->
             <!-- 三级导航 -->
             <view class="brands">
-              <navigator url="/pages/list/index" v-for="product in item.children" :key="product.cat_id">
+              <navigator :url="'/pages/list/index?query='+product.cat_name" v-for="product in item.children" :key="product.cat_id">
                 <image :src="product.cat_icon"></image>
                 <text>{{product.cat_name}}</text>
               </navigator>

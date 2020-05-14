@@ -19,7 +19,7 @@ Vue.use(function(vue){
       url:baseUrl+opt.url,
       data:opt.data,
       method:opt.method,
-      Authorization: opt.token
+      // Authorization: opt.token
     })
       //请求后
       uni.hideLoading()
